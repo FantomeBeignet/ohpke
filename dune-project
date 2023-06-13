@@ -19,7 +19,7 @@
  (name ohpke)
  (synopsis "HPKE implementation in OCaml")
  (description "RFC 9180 HPKE implementation in OCaml")
- (depends ocaml dune cstruct mirage-crypto-ec)
+ (depends ocaml dune cstruct mirage-crypto-pk)
  (tags
   (cryptography "hybrid encryption" "public key")))
 
