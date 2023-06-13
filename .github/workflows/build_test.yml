@@ -1,0 +1,42 @@
+name: Build and test
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "lib/**"
+      - "test/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@v3
+
+      - name: Set-up OCaml 5.0
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: "5.0"
+          dune-cache: true
+      - name: Install dependencies
+        run: opam install . --deps-only --with-test --yes
+      - name: Build
+        run: opam exec -- dune build
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@v3
+
+      - name: Set-up OCaml 5.0
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: "5.0"
+          dune-cache: true
+      - name: Install dependencies
+        run: opam install . --deps-only --with-test --yes
+      - name: Run tests
+        run: opam exec -- dune runtest
