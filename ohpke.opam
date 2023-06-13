@@ -13,7 +13,7 @@ depends: [
   "ocaml"
   "dune" {>= "3.7"}
   "cstruct"
-  "mirage-crypto-ec"
+  "mirage-crypto-pk"
   "odoc" {with-doc}
 ]
 build: [
