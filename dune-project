@@ -1,6 +1,6 @@
 (lang dune 3.7)
 
-(name ohpke)
+(name hpke)
 
 (generate_opam_files true)
 
@@ -16,7 +16,7 @@
 (documentation https://www.fantomebeig.net/projects/ohpke/docs/)
 
 (package
- (name ohpke)
+ (name hpke)
  (synopsis "HPKE implementation in OCaml")
  (description "RFC 9180 HPKE implementation in OCaml")
  (depends ocaml dune cstruct mirage-crypto mirage-crypto-pk hkdf)
