@@ -13,7 +13,7 @@
 
 (license ISC)
 
-(documentation https://url/to/documentation)
+(documentation https://www.fantomebeig.net/projects/ohpke/docs/)
 
 (package
  (name ohpke)

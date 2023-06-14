@@ -7,7 +7,7 @@ authors: ["Tom Béné <himself@fantomebeign.net>"]
 license: "ISC"
 tags: ["cryptography" "hybrid encryption" "public key"]
 homepage: "https://github.com/FantomeBeignet/ohpke"
-doc: "https://url/to/documentation"
+doc: "https://www.fantomebeig.net/projects/ohpke/docs/"
 bug-reports: "https://github.com/FantomeBeignet/ohpke/issues"
 depends: [
   "ocaml"
