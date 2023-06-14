@@ -1,4 +1,4 @@
 (library
  (public_name ohpke)
  (name ohpke)
- (libraries cstruct mirage-crypto-pk))
+ (libraries cstruct mirage-crypto mirage-crypto-pk hkdf))
